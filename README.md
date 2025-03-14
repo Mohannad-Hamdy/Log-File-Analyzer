@@ -11,9 +11,12 @@ Analyze a 1-million entry log file to:
 
 ## 📄 Example Log File Structure
 ```plaintext
-2023-01-01 ERROR Message #4231
-2023-01-01 WARN Message #1894
-2023-01-01 INFO Message #7562
+2023-01-01 21:43:28 WARN Message #130059
+2023-01-01 21:43:28 ERROR Message #130060
+2023-01-01 21:43:28 INFO Message #130061
+2023-01-01 21:43:28 ERROR Message #130062
+2023-01-01 21:43:28 ERROR Message #130063
+2023-01-01 21:43:28 INFO Message #130064
 ...
 ```
 - Contains 1,000,000 entries
