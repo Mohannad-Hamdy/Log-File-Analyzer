@@ -35,8 +35,8 @@ For each log entry:
 |----------|-------|---------------|----------------|
 | Single-threaded | Slow ✅ | Accurate | Baseline performance |
 | Multi-threaded | Fast ✅ | Accurate | Proper threading benefits |
-| Unsafe Threads | Fastest ❌ | Wrong counts | Sync needed for accuracy |
-| Safe Threads | Fast ✅ | Accurate | Correct sync implementation |
+| Unsafe Threads | Fastest ✅ | Wrong counts | Sync needed for accuracy |
+| Safe Threads |  < unsafe| Accurate | Correct sync implementation |
 
 ## 🛠️ Project Development Steps
 1. **Create Log Generator**:
