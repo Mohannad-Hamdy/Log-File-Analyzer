@@ -29,6 +29,10 @@ For each log entry:
 2. Convert log level to lowercase and back to uppercase 100 times (simulate complex processing)
 3. Count occurrences of each log level
 4. Compare results between different implementations
+5. Track entries per minute and error entries per minute
+6. Calculate error rate per minute
+7. Detect bursts: 5+ consecutive ERRORs within 2 seconds of each other
+
 
 ## 📋 Key Scenarios Demonstrated
 | Scenario | Speed | Data Accuracy | Learning Point |
@@ -36,7 +40,7 @@ For each log entry:
 | Single-threaded | Slow ✅ | Accurate | Baseline performance |
 | Multi-threaded | Fast ✅ | Accurate | Proper threading benefits |
 | Unsafe Threads | Fastest ✅ | Wrong counts | Sync needed for accuracy |
-| Safe Threads |  < unsafe| Accurate | Correct sync implementation |
+| Safe Threads |  < unsafe | Accurate | Correct sync implementation |
 
 ## 🛠️ Project Development Steps
 1. **Create Log Generator**:
