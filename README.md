@@ -11,12 +11,16 @@ Analyze a 1-million entry log file to:
 
 ## 📄 Example Log File Structure
 ```plaintext
-2023-01-01 21:43:28 WARN Message #130059
-2023-01-01 21:43:28 ERROR Message #130060
-2023-01-01 21:43:28 INFO Message #130061
-2023-01-01 21:43:28 ERROR Message #130062
-2023-01-01 21:43:28 ERROR Message #130063
-2023-01-01 21:43:28 INFO Message #130064
+2023-01-01 00:00:00.000 INFO 192.168.1.1 [userA] [OrderService] - Message #0
+2023-01-01 00:00:00.300 TRACE 192.168.1.1 [userA] [OrderService] - Message #1
+2023-01-01 00:00:00.600 TRACE 172.16.0.1 [admin] [InventoryService] - Message #2
+2023-01-01 00:00:00.900 INFO 10.0.0.1 [userB] [AuthService] - Message #3
+2023-01-01 00:00:01.200 TRACE 10.0.0.1 [userA] [AuthService] - Message #4
+2023-01-01 00:00:01.500 DEBUG 172.16.0.1 [admin] [PaymentService] - Message #5
+2023-01-01 00:00:02.500 ERROR 192.168.1.2 [userA] [AuthService] - Message #6
+2023-01-01 00:00:02.800 FATAL 172.16.0.1 [userA] [OrderService] - Message #7
+2023-01-01 00:00:03.800 WARN 127.0.0.1 [userB] [PaymentService] - Message #8
+2023-01-01 00:00:04.100 TRACE 192.168.1.2 [userA] [InventoryService] - Message #9
 ...
 ```
 - Contains 1,000,000 entries
