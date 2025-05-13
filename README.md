@@ -26,12 +26,11 @@ Analyze a 1-million entry log file to:
 ## 🔍 Processing We Will Do
 For each log entry:
 1. Extract log level (ERROR/WARN/INFO)
-2. Convert log level to lowercase and back to uppercase 100 times (simulate complex processing)
-3. Count occurrences of each log level
-4. Compare results between different implementations
-5. Track entries per minute and error entries per minute
-6. Calculate error rate per minute
-7. Detect bursts: 5+ consecutive ERRORs within 2 seconds of each other
+2. Count occurrences of each log level
+3. Compare results between different implementations
+4. Track entries per minute and error entries per minute
+5. Calculate error rate per minute
+6. Detect bursts: 5+ consecutive ERRORs within 2 seconds of each other
 
 
 ## 📋 Key Scenarios Demonstrated
