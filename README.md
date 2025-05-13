@@ -24,7 +24,7 @@ Analyze a 1-million entry log file to:
 ...
 ```
 - Contains 1,000,000 entries
-- Random log levels (ERROR/WARN/INFO)
+- Random log levels ("FATAL", "ERROR", "WARN", "INFO", "DEBUG", "TRACE")
 - Generated automatically by the program
 
 ## 🔍 Processing We Will Do
